@@ -184,5 +184,5 @@ class Core(base.Core):
 					usageLoyaltyTime = usageLoyaltyTime[0 : usageLoyaltyTime.find(' ')].strip()
 					account['loyaltyDate'] = usageLoyaltyTime
 		except:
-			tools.Logger.error()
+			pass
 		return account
