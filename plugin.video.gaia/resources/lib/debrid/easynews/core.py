@@ -163,8 +163,7 @@ class Core(base.Core):
 						'timestamp' : accountTimestamp,
 						'date' : accountExpiration.strftime('%Y-%m-%d'),
 						'remaining' : (accountExpiration - datetime.datetime.today()).days,
-					},
-					'usageHtml' : 'hi there'
+					}
 				}
 
 				if not minimal:
@@ -185,5 +184,5 @@ class Core(base.Core):
 					usageLoyaltyTime = usageLoyaltyTime[0 : usageLoyaltyTime.find(' ')].strip()
 					account['loyaltyDate'] = usageLoyaltyTime
 		except:
-			tools.Logger.error()
+			pass
 		return account
