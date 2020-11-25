@@ -163,7 +163,8 @@ class Core(base.Core):
 						'timestamp' : accountTimestamp,
 						'date' : accountExpiration.strftime('%Y-%m-%d'),
 						'remaining' : (accountExpiration - datetime.datetime.today()).days,
-					}
+					},
+					'usageHtml' : 'hi there'
 				}
 
 				if not minimal:
